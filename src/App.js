@@ -1,0 +1,42 @@
+import VideoBanner from "./components/VideoBanner";
+import ImageCarousel from "./components/ImageCarousel";
+import BarberServices from "./components/BarberServices";
+import SalonServices from "./components/SalonServices";
+import { useEffect } from "react";
+import scrollToTop from "./helpers/scrollToTop";
+
+function App() {
+  useEffect(() => {
+    scrollToTop()
+  },[])
+  return (
+    <div className="relative">
+      <VideoBanner/>
+      <h2 className="text-center py-4 text-6xl text-red-900">Belfast Barbershop</h2>
+      <p className="italic text-center text-xl">We are Belfast, Maine's go-to grooming house on 1 Beaver St.</p>
+      <p className="text-center text-base text-neutral-800">Call +1 207-323-5663 for walk-ins and same-day styling updates.</p>
+      <section className="py-4">
+        <ImageCarousel/>
+      </section>
+      <section className="py-4 gap-4 flex justify-center relative text-neutral-950">
+        <h2 className="text-9xl hidden lg:block absolute top-52 -left-48 text-red-900 rotate-90">About Us</h2>
+        <div className="flex flex-col gap-4 px-4">
+        <p className="text-4xl">Who We are</p>
+        <p className="italic">Belfast, ME | Since 2023</p>
+        <p className="max-w-lg mx-auto text-xl">
+        Your go-to destination for top-notch grooming and hairstyling services along Belfast's working waterfront. We opened our doors to honor the art of barbering while keeping every visit personal, warm, and grounded in Maine hospitality.
+        </p>
+        <p className="max-w-lg mx-auto text-xl">Founded in 2023, Belfast Barbershop has grown from a community-driven dream at 1 Beaver St into a trusted downtown destination where every cut is tailored to how you live, work, and explore coastal Maine.</p>
+        <p className="max-w-lg mx-auto text-xl">Our team of experienced and skilled barbers is the backbone of our success. We take pride in our talented and diverse staff, each of whom is committed to delivering the highest level of service. Our barbers are not just professionals; they are artists who continually refine their skills and stay at the forefront of industry trends.</p>
+        </div>
+        <img className="w-1/4 grayscale object-cover hidden md:block" src='https://images.pexels.com/photos/1895701/pexels-photo-1895701.jpeg'></img>
+      </section>
+      <section className="w-xl pb-4 px-4 bg-red-950 bg-opacity-10 mt-4 flex flex-col md:flex-row mx-auto justify-center items-center gap-12">
+        <BarberServices/>
+        <SalonServices/>
+      </section>
+    </div>
+  );
+}
+
+export default App;
