@@ -32,7 +32,7 @@ function Contact() {
         </div>
         <div className="max-w-xl mx-auto p-6 text-red-800">
           <p className='text-3xl'>We'd love to hear from you! Fill out the form below to get in touch with us.</p>
-          <p className='mt-2 text-lg'>Located at 1 Beaver St, Belfast, ME, United States. Call +1 207-323-5663 for quick replies.</p>
+          <p className='mt-2 text-lg'>Located at 18 Anderson Street, Belfast, ME, United States, Maine. Send a note through this form and we will reply as soon as possible.</p>
     
           <form onSubmit={handleSubmit} className="mt-4">
             <div className="mb-4">

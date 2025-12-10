@@ -7,8 +7,7 @@ function Footer() {
     <div className='bg-neutral-950 relative p-8 nav text-neutral-300 flex items-center justify-evenly'>
         
         <ul className='flex gap-1 flex-col items-center justify-center'>
-        {/* Replace this svg with the new Belfast Barbershop mark (for example: src/images/belfast-logo.png) */}
-        <img className='w-40' src={logo}></img>
+        <img className='w-40' src={logo} alt='Storms Barbershop logo'></img>
           <span className='opacity-60 cursor-not-allowed'>Make A Reservation</span>
           <Link to='/contact'>Contact Us</Link>
           <Link to='/reservations'>About Us</Link>
@@ -16,8 +15,9 @@ function Footer() {
           <Link to='/services'>View Our Services</Link>
         </ul>
         <div className='text-center'>
-          <p className='font-semibold'>1 Beaver St, Belfast, ME, United States</p>
-          <p>+1 207-323-5663</p>
+          <p className='font-semibold'>Storms Barbershop</p>
+          <p className='text-sm'>18 Anderson Street, Belfast, ME, United States, Maine</p>
+          <p className='text-sm opacity-70'>Walk-ins welcome; booking via the menu</p>
         </div>
         <ul className='flex gap-4 flex-col items-center justify-center'>
           <img className='w-10' src='https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png'></img>

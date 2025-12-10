@@ -53,7 +53,7 @@ function BarberShopReservation() {
   const handleSubmit = (event) => {
     event.preventDefault();
     if(selectedDate && selectedService && selectedStylist && selectedTime)
-    setMessage(`Successfully Booked Reservation with ${selectedStylist} for ${selectedService} on ${selectedDate} at ${selectedTime}. We will be reaching out to you shortly!`);
+    setMessage(`Successfully booked at Storms Barbershop with ${selectedStylist} for ${selectedService} on ${selectedDate} at ${selectedTime}. We will reach out soon to confirm.`);
     // You can implement your booking logic here
   };
   function CustomSelect({ options, value, onChange }) {
@@ -83,8 +83,8 @@ function BarberShopReservation() {
           <div className='font-bold'>Stylist & Service:</div>
           <select required={true} value={selectedStylist} onChange={(e) => handleStylistChange(e.target.value)} className='border w-80 border-red-800 bg-neutral-300'>
             <option value="Sierra">Sierra</option>
-            <option value="Billy">Billy</option>
-            <option value="Jonny">Jonny</option>
+            <option value="Remi">Remi</option>
+            <option value="Jin">Jin</option>
           </select>
           <ServicesSelect setSelectedService={setSelectedService}/>
         </div>

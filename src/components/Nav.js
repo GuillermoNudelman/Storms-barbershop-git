@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import MobileMenu from './MobileMenu';
-import logo from '../images/logo.png';
+import logo from '../images/logo.png'
 
 function Nav() {
     const [mobileMenuActive, setMobileMenuActive] = useState(false)
@@ -42,8 +42,7 @@ function Nav() {
       <div className='h-20 bg-neutral-950'></div>
       <nav style={scrollDir === 'scrolling up' ? {animation: 'slideDown 200ms ease forwards'} : {animation: 'slideUp 200ms ease forwards'}} className="fixed top-0 nav flex w-full items-center justify-between text-neutral-300 h-20 px-4 bg-neutral-950 z-40">
     <Link onClick={() => setMobileMenuActive(false)} to="/">
-    {/* Replace this image with the Belfast Barbershop logo (e.g., src/images/belfast-logo.png) */}
-    <img src={logo} className="px-2 w-44"></img>
+    <img src={logo} alt="Storms Barbershop logo" className="px-2 w-44"></img>
     </Link>
     <ul className="md:flex absolute items-center left-1/2 -translate-x-1/2 gap-8 text-xl hidden">
     
